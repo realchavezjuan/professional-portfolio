@@ -8,10 +8,6 @@ body{
     background-color:whitesmoke;
 }
 
-.left-side{
-
-}
-
 /* header */
 header{
     display:flex;
@@ -80,6 +76,16 @@ header nav ul li{
 .work{
     display:flex;
     flex-direction: row;
+}
+
+.work h2{
+    margin-top:0px;
+}
+
+.work-images{
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; wont work not sure why  */
 }
 
 /* contact */
