@@ -8,6 +8,10 @@ body{
     background-color:whitesmoke;
 }
 
+.left-side{
+
+}
+
 /* header */
 header{
     display:flex;
@@ -54,3 +58,48 @@ header nav ul li{
     flex:1 12%
 }
 
+/* about */
+.about{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: flex-end; */
+}
+
+.title-about h2{
+    margin-top: 0px;
+    border-right: black;
+    border-width: 5px;
+}
+
+.content-about p{
+    margin-top: 0px;
+}
+
+/* work */
+.work{
+    display:flex;
+    flex-direction: row;
+}
+
+/* contact */
+.contact{
+    display:flex;
+    flex-direction:row;
+    /* padding-left:10vw; */
+}
+
+.contact-title h2{
+    margin-top: 0px;
+    border-right: black;
+}
+
+.contact-content{
+    margin-top: 0px;
+    /* padding-left: 10vw; */
+}
+
+/* footer */
+footer h3{
+    font-weight: lighter;
+}
