@@ -5,10 +5,13 @@ a {
 
 body{
     font-family:'Courier New', Courier, monospace;
-    background-color:whitesmoke;
+    background-color:rgb(250, 250, 250);
 }
 
-.left-side{
+section{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -32,14 +35,11 @@ header nav ul li{
 
 /* hero */
 .hero{
-    /* background-color:#8EA69B; */
-    display:flex;
-    flex-wrap:wrap;
     align-items:center;
     justify-content: center;
 }
 .hero-title{
-    padding-right: 200px;
+    margin: 25px;
 }
 
 .hero h1{
@@ -58,48 +58,45 @@ header nav ul li{
     flex:1 12%
 }
 
+/* content wrapper */
+.page-wrapper{
+    justify-content: center;
+}
+/* left side */
+.left-title{
+    flex: 0 0 20%;
+    margin: 0;
+    text-align: right;
+    padding-right: 50px;
+}
+
 /* about */
-.about{
-    display:flex;
-    flex-direction: row;
-    align-items: flex-start;
-    /* justify-content: flex-end; */
-}
-
-.title-about h2{
-    margin-top: 0px;
-    border-right: black;
-    border-width: 5px;
-}
-
-.content-about p{
-    margin-top: 0px;
+.about p{
+    margin: 0;
+    max-width: 635px;
 }
 
 /* work */
-.work{
-    display:flex;
-    flex-direction: row;
+.work-grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.work-grid-container > div {
+    border: 1px solid black;
+    padding: 70px 100px;
+}
+
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 /* contact */
-.contact{
-    display:flex;
-    flex-direction:row;
-    /* padding-left:10vw; */
-}
-
-.contact-title h2{
-    margin-top: 0px;
-    border-right: black;
-}
-
-.contact-content{
-    margin-top: 0px;
-    /* padding-left: 10vw; */
-}
 
 /* footer */
 footer h3{
     font-weight: lighter;
+    text-align: center;
 }
