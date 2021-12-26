@@ -58,42 +58,52 @@ header nav ul li{
     flex:1 12%
 }
 
-/* content wrapper */
-.page-wrapper{
-    justify-content: center;
-}
 /* left side */
 .left-title{
-    flex: 0 0 20%;
     margin: 0;
     text-align: right;
     padding-right: 50px;
 }
 
 /* about */
+
+.content{
+    justify-content: center;
+}
 .about p{
     margin: 0;
-    max-width: 635px;
+    max-width: 650px;
 }
 
 /* work */
 .work-grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
 }
 
 .work-grid-container > div {
     border: 1px solid black;
-    padding: 70px 100px;
+    padding: 70px 105px;
+}
+
+.work-grid-container > a {
+    border: 1px solid black;
+    padding: 70px 105px;
 }
 
 .grid-item1{
     grid-column-start: 1;
     grid-column-end: 3;
+    background-image: url(../images/Spelling\ Bee\ Screenshot.png);
+    background-size: 425px;
 }
 
 /* contact */
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+}
 
 /* footer */
 footer h3{
@@ -128,20 +138,21 @@ footer h3{
 .work{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .work-grid-container{
     display: flex;
     flex-direction: column;
+    width: 425px;
 }
 
-.work-grid-contaier > div{
-    margin: 25px;
-    padding: auto ;
+.work-grid-container > a{
+    margin: 10px 0 0 0;
 }
-.grid-item1{
-    grid-column-start: auto;
-    grid-column-end: auto;
+
+.work-grid-container > div{
+    margin: 10px 0 0 0;
 }
 
 /* contact */
